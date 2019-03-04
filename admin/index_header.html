@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">ADMIN Panel</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul id="active" class="nav navbar-nav side-nav">
+            <li class="selected"><a href="index.php"><i class="fa fa-bullseye"></i> Home</a></li>
+            <li class="selected"><a href="setTimer.php"><i class="fa fa-clock"></i> Set Timer</a></li>
+            <li><a href="feedbackAdmin.php"><i class="fa fa-comments"></i> Feedback Of Users</a></li>
+
+            <li><a href="choose.php"><i class="fa fa-eye"></i> View Categoris & Qusetions</a></li>
+            <li><a href="insert.php"><i class="fa fa-address-book"></i> Insert New Questions</a></li>
+            <li><a href="ChooseCatToDlt.php"><i class="fa fa-trash"></i> Delete Categoris</a></li>
+     
+        </ul>
+        <ul class="nav navbar-nav navbar-right navbar-user">
+           
+            <li class="dropdown user-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"> </i> <?php echo $_SESSION['user_name'];?>  <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li><a href="../logout.php"><i class="fa fa-power-off"></i> Log Out</a></li>
+
+                </ul>
+            </li>
+            <li class="divider-vertical"></li>
+            <li>
+                <form class="navbar-search">
+                    <input type="text" placeholder="Search" class="form-control">
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>

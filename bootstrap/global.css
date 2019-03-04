@@ -1,0 +1,28 @@
+*{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.bg{
+    background-color: #444;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+}
+.form-container{
+
+    padding:30px 30px;
+    margin-top:30px;
+    margin-bottom: auto;
+    -webkit-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shasow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+
+h1,h4{
+    text-align: center;
+
+}
+a:hover{
+    background-color: #eece1a;
+    transition: all 0.5s ease-out;
+}
